@@ -14,9 +14,19 @@
   position: sticky;
   top: 0;
 }
+@media screen and (max-width: 576px) {
+  #head-container{
+    padding: 5px 14px;
+  }
+}
 .name{
   font-size: 35px;
   color: rgb(47, 55, 61);
+}
+@media screen and (max-width: 576px) {
+  .name{
+    font-size: 20px;
+  }
 }
 #about{
   background-color: aliceblue;
@@ -26,10 +36,21 @@
   justify-content: space-around;
   font-family: sans-serif;
 }
+@media screen and (max-width: 576px) {
+  #about{
+    width: 100%;
+  }
+}
 
 .about-me{
   width: 50%;
   margin: 30px;
+}
+@media screen and (max-width: 576px) {
+  .about-me{
+    width: 100%;
+    margin: 20px;
+  }
 }
 .about-me h3{
   font-size: 20px;
@@ -37,6 +58,12 @@
   font-weight: 700;
   text-decoration: underline;
   margin-bottom: 16px;
+}
+@media screen and (max-width: 576px) {
+  .about-me h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 }
 .about-me h1{
   margin-bottom: 16px;
@@ -46,14 +73,31 @@
   font-weight: 700;
   /* text-decoration: underline; */
 }
+@media screen and (max-width: 576px) {
+  .about-me h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
 .about-me p{
   font-size: 18px;
   font-family: 'Roboto';
   color: rgb(7, 10, 12);
   font-weight: 600;
 }
+@media screen and (max-width: 576px) {
+  .about-me p{
+    font-size: 10px;
+    /* margin-bottom: 10px; */
+  }
+}
 .btns-card{
   margin: 20px 0px;
+}
+@media screen and (max-width: 576px) {
+  .btns-card{
+    margin: 10px 0px;
+  }
 }
 .project-btn{
   background-color: rgb(247, 140, 0);
@@ -63,6 +107,12 @@
   outline: none;
   cursor: pointer;
   margin: 0px 20px 0px 0px;
+}
+@media screen and (max-width: 576px) {
+  .project-btn{
+    padding: 5px 10px;
+    margin-top: 0px 15px 0px 0px;
+  }
 }
 
 .linkedin-btn{
@@ -76,6 +126,12 @@
   color: #000;
   font-weight: 700;
 }
+@media screen and (max-width: 576px) {
+  .linkedin-btn{
+    padding: 5px 10px;
+    margin-top: 0px 15px 0px 0px;
+  }
+}
 .btns-card a{
   text-decoration: none;
   color: #000;
@@ -85,17 +141,39 @@
 .profile{
   padding: 20px;
 }
+@media screen and (max-width: 576px) {
+  .profile{
+    padding: 0px;
+  }
+}
+
 .image{
   height: 300px;
   width: 300px;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
+@media screen and (max-width: 576px) {
+  .image{
+    display: none;
+  }
+}
 
 .nav-list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.nav-icon{
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .nav-list{
+    display: none;
+  }
+  .nav-icon{
+    display: block;
+  }
 }
 
 .nav-list li {
@@ -142,11 +220,23 @@
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 576px) {
+  .form{
+    width: 300px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+}
 .form label{
   font-size: 16px;
   font-weight: 600;
   color: #161414;
   
+}
+@media screen and (max-width: 576px) {
+  .form label{
+    font-size: 12px;
+  }
 }
 .form input{
   font-size: 16px;
@@ -160,9 +250,16 @@
   padding: 5px 15px;
   color: #524c4c;
   outline: none;
-  font-size: 16px;
   margin-top: 5px;
   width: 100%;
+}
+@media screen and (max-width: 576px) {
+  .form input{
+    font-size: 12px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 2px 8px;
+  }
 }
 .form textarea{
   font-size: 16px;
@@ -176,9 +273,17 @@
   padding: 5px 15px;
   color: #524c4c;
   outline: none;
-  font-size: 16px;
   margin-top: 5px;
   min-width: 100%;
+}
+@media screen and (max-width: 576px) {
+  .form textarea{
+    font-size: 12px;
+    min-height: 60px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 2px 8px;
+  }
 }
 .form input:hover{
   outline-style: groove;
@@ -205,6 +310,17 @@
   margin-top: 10px;
   font-weight: 700;
 }
+@media screen and (max-width: 576px) {
+  .form button{
+    font-size: 12px;
+    height: 30px;
+    margin-top: 6px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .form button:hover{
   background-color: #78ec5a;
   color: #000;
@@ -219,6 +335,14 @@
   flex-direction: column;
   width: 100%;
 }
+/* @media screen and (max-width: 576px) {
+  #projects{
+    font-size: 12px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 2px 8px;
+  }
+} */
 #contact{
   background-color: aliceblue;
   margin: 0px;
@@ -230,6 +354,11 @@
   width: 100%;
   padding-bottom: 50px;
 }
+@media screen and (max-width: 576px) {
+  #contact{
+    padding-bottom: 30px;
+  }
+}
 .projects-list{
   padding-left: 0px;
   width: 100%;
@@ -237,6 +366,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media screen and (max-width: 576px) {
+  .projects-list{
+    
+  }
 }
 .contact-card{
   margin: 20px 0px 10px 0px;

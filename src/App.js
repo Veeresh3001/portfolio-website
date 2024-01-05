@@ -5,6 +5,7 @@ import ProjectItem from "./components/ProjectItem";
 import { FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
+import { IoMenu } from "react-icons/io5";
 
 import "./App.css";
 
@@ -99,6 +100,9 @@ class App extends Component {
               <a href="/contact">Contact</a>
             </li>
           </ul>
+          <div className="nav-icon">
+            <IoMenu size={30} />
+          </div>
         </nav>
         <div id="about">
           <div className="about-me">
