@@ -68,6 +68,9 @@ class App extends Component {
     };
     this.setState((prev) => ({
       projectsData: [...prev.projectsData, newItem],
+      nameInp: "",
+      descriptionInp: "",
+      linkInp: "",
     }));
   };
 
